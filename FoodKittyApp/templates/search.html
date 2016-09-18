@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>FoodKitty</title>
+    {% load staticfiles  %}
+    <link rel="stylesheet" type="text/css" href="{% static "Flat-UI-master/dist/css/vendor/bootstrap.min.css" %}"/>
+    <link rel="stylesheet" type="text/css" href="{% static "Flat-UI-master/dist/css/flat-ui.min.css" %}"/>
+    <script type="application/javascript" src="{% static "Flat-UI-master/dist/js/vendor/jquery.min.js" %}"></script>
+    <script type="application/javascript" src="{% static "Flat-UI-master/docs/assets/js/application.js" %}"></script>
+    <script type="application/javascript" src="{% static "Flat-UI-master/dist/js/flat-ui.min.js" %}"></script>
+</head>
+<body>
+    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                </button>
+                <a class="navbar-brand" href="#">FoodKitty</a>
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="#">Home</a></li>
+                    <li><a href="/FoodKitty/advanced">Advanced</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Information<b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="/FoodKitty/about">About</a></li>
+                            <li><a href="/FoodKitty/help">Help</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="active"><a href="mailto:huangruihaocst@126.com">Contact me</a></li>
+                </ul>
+            </div><!--/.nav-collapse -->
+        </div>
+    </div>
+
+    <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+    <div class="container" style="align-content: center">
+        <div class="row"style="align-content: center">
+            <div class="col-md-7 mtl"style="margin-left: 18.5%">
+                <img src="../static/Flat-UI-master/img/icons/png/icon.png" width="100px" height="100px" style="margin-left: 30%; float: left"/>
+                <br/>
+                <h3 class="demo-panel-title">FoodKitty</h3>
+                <div class="form-group" style="align-content: center">
+                    <form action="/FoodKitty/results/" method="get">
+                        <input class="form-control typeahead-only input-hg" type="text" name="keywords"/>
+                        <br/>
+                        <input type="submit" class="btn btn-primary" value="search" style="align-content: center; margin-left: 48%"/>
+                    </form>
+                    <span class="form-control-feedback control-feedback-hg fui-search"></span>
+                </div>
+            </div> <!-- /tags -->
+        </div><!-- /.row -->
+    </div>
+
+</body>
+</html>

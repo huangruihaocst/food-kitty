@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>About</title>
+    {% load staticfiles  %}
+    <link rel="stylesheet" type="text/css" href="{% static "Flat-UI-master/dist/css/vendor/bootstrap.min.css" %}"/>
+    <link rel="stylesheet" type="text/css" href="{% static "Flat-UI-master/dist/css/flat-ui.min.css" %}"/>
+    <script type="application/javascript" src="{% static "Flat-UI-master/dist/js/vendor/jquery.min.js" %}"></script>
+    <script type="application/javascript" src="{% static "Flat-UI-master/docs/assets/js/application.js" %}"></script>
+    <script type="application/javascript" src="{% static "Flat-UI-master/dist/js/flat-ui.min.js" %}"></script>
+</head>
+<body>
+    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                </button>
+                <a class="navbar-brand" href="#">FoodKitty</a>
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li><a href="/FoodKitty/search">Home</a></li>
+                    <li><a href="/FoodKitty/advanced">Advanced</a></li>
+                    <li class="dropdown active">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Information<b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="/FoodKitty/about">About</a></li>
+                            <li><a href="/FoodKitty/help">Help</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="active"><a href="mailto:huangruihaocst@126.com">Contact me</a></li>
+                </ul>
+            </div><!--/.nav-collapse -->
+        </div>
+    </div>
+
+    <div class="container">
+        <br/>
+        <h1>About</h1>
+        <br/><br/><br/><br/><br/><br/><br/><br/><br/>
+        <div class="text-primary" style="font-size: 25px; text-align: center">
+            <p>CST 44</p>
+            <p>黄锐皓</p>
+            <p>2014011385</p>
+            <p>huangruihaocst@126.com</p>
+        </div>
+    </div>
+</body>
+</html>
